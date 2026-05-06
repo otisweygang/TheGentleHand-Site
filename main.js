@@ -21,7 +21,7 @@ const i18n = {
     credit_cinematography: 'Cinematography',
     credit_editor:      'Editor',
     credit_sound:       'Sound',
-    footer:             '© 2024 The Gentle Hand of Atta. All rights reserved.',
+    footer:             '© 2026 The Gentle Hand of Atta. All rights reserved.',
   },
   ar: {
     title:              'اليد الحنون لعطا',
@@ -35,7 +35,7 @@ const i18n = {
     trailer_link:       'شاهد الإعلان التشويقي ↗',
     story_intro:        '"صوت الجرّافة هو موسيقى الاحتلال." — عطا جابر',
     support_lead:       'قف مع عطا. قف مع فلسطين.',
-    support_desc:       'دعمك يساهم في إيصال هذه القصة إلى جماهير حول العالم، ويُديم توثيق المقاومة والصمود في الضفة الغربية.',
+    support_desc:       'دعمك يساهم في إيصال هذه القصة إلى جماهير حول العالم، ويواصل توثيق المقاومة والصمود في الضفة الغربية.',
     support_btn:        'تبرّع — قريبًا',
     social_follow:      'تابع الفيلم',
     credit_directed:    'إخراج',
@@ -44,7 +44,7 @@ const i18n = {
     credit_cinematography: 'تصوير',
     credit_editor:      'مونتاج',
     credit_sound:       'صوت',
-    footer:             '© 2024 اليد الحنون لعطا. جميع الحقوق محفوظة.',
+    footer:             '© 2026 اليد الحنون لعطا. جميع الحقوق محفوظة.',
   },
   fr: {
     title:              'La Main Douce d\'Atta',
@@ -54,7 +54,7 @@ const i18n = {
     nav_credits:        'Crédits',
     hero_sub:           'Vallée de Baqa\'a, Cisjordanie',
     film_lead:          'Un long-métrage de Bruno Sorrentino & Uri Fruchtmann.',
-    film_desc:          'Depuis 25 ans, Atta Jaber cultive sa terre dans la vallée de Baqa\'a, en Cisjordanie occupée. Les colons avancent. Les maisons sont démolies. Les terrasses millénaires sont effacées. Atta ne lève pas la main contre la violence. Voici son histoire.',
+    film_desc:          'Depuis 25 ans, Atta Jaber cultive sa terre dans la vallée de Baqa\'a, en Cisjordanie occupée. Les colons avancent. Les maisons sont démolies. Les terrasses millénaires sont effacées. Atta refuse de lever la main sur quiconque. Voici son histoire.',
     trailer_link:       'Voir la bande-annonce ↗',
     story_intro:        '« Le bruit du bulldozer est la musique de l\'occupation. » — Atta Jaber',
     support_lead:       'Soutenez Atta. Soutenez la Palestine.',
@@ -67,7 +67,7 @@ const i18n = {
     credit_cinematography: 'Image',
     credit_editor:      'Montage',
     credit_sound:       'Son',
-    footer:             '© 2024 La Main Douce d\'Atta. Tous droits réservés.',
+    footer:             '© 2026 La Main Douce d\'Atta. Tous droits réservés.',
   },
   he: {
     title:              'היד הרכה של עטא',
@@ -89,8 +89,8 @@ const i18n = {
     credit_produced:    'הפקה',
     credit_cinematography: 'צילום',
     credit_editor:      'עריכה',
-    credit_sound:       'קול',
-    footer:             '© 2024 היד הרכה של עטא. כל הזכויות שמורות.',
+    credit_sound:       'צליל',
+    footer:             '© 2026 היד הרכה של עטא. כל הזכויות שמורות.',
   },
 };
 
