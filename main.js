@@ -101,26 +101,21 @@ function applyLang(lang) {
   const strings = i18n[lang];
   if (!strings) return;
 
-  // Update dir/lang on html element
   const html = document.documentElement;
   html.setAttribute('lang', lang);
   html.setAttribute('dir', RTL_LANGS.has(lang) ? 'rtl' : 'ltr');
 
-  // Update all translated text nodes
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.dataset.i18n;
     if (strings[key] !== undefined) {
-      // Preserve innerHTML for elements with HTML entities (&amp; etc.)
       el.textContent = strings[key];
     }
   });
 
-  // Update active button state
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.lang === lang);
   });
 
-  // Persist choice
   try { localStorage.setItem('tgha-lang', lang); } catch (_) {}
 }
 
@@ -146,7 +141,6 @@ function onScroll() {
   const y = window.scrollY;
   const scrolledPastNav = y > nav.offsetHeight;
 
-  // Hide on scroll down, show on scroll up
   if (scrolledPastNav) {
     nav.classList.toggle('nav-hidden', y > lastScrollY);
   } else {
@@ -156,7 +150,6 @@ function onScroll() {
 
   nav.classList.toggle('scrolled', y > 20);
 
-  // Highlight active nav link
   const sections = document.querySelectorAll('section[id]');
   let current = '';
   sections.forEach(sec => {
@@ -181,7 +174,6 @@ toggle.addEventListener('click', () => {
   mobileMenu.classList.toggle('open', !expanded);
 });
 
-// Close mobile menu on link click
 mobileMenu.querySelectorAll('a').forEach(a => {
   a.addEventListener('click', () => {
     toggle.setAttribute('aria-expanded', 'false');
