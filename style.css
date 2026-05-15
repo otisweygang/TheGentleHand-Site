@@ -351,7 +351,7 @@ a { color: inherit; text-decoration: none; }
 .row-a .gimg:last-child  { width: 40%; height: clamp(220px, 32vw, 480px); }
 
 /* Row B: soldier image — narrower, flanked by row-c images */
-.row-b .gimg { width: 100%; height: clamp(200px, 28vw, 420px); }
+.row-b .gimg { width: 100%; height: clamp(240px, 34vw, 520px); }
 
 /* Row C: 40/60 split */
 .row-c .gimg:first-child { width: 40%; height: clamp(220px, 32vw, 480px); }
