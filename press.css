@@ -336,13 +336,14 @@
 
 .portraits {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: clamp(0.75rem, 2vw, 1.25rem);
+  grid-template-columns: repeat(auto-fill, 6.5rem);
+  gap: 1.5rem 1.25rem;
   margin-top: 2.5rem;
 }
 
 .portrait {
   margin: 0;
+  width: 6.5rem;
 }
 
 .portrait picture,
@@ -351,6 +352,8 @@
 }
 
 .portrait img {
+  width: 6.5rem;
+  height: 8rem;
   aspect-ratio: 4 / 5;
   border: 1px solid #e0deda;
   background: var(--off-white);
@@ -547,10 +550,6 @@
   .credits div {
     display: block;
     margin-bottom: 1rem;
-  }
-
-  .portraits {
-    grid-template-columns: repeat(2, 1fr);
   }
 
   .stills,
