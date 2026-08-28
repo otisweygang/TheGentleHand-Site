@@ -534,7 +534,21 @@ a { color: inherit; text-decoration: none; }
   font-size: 0.7rem;
   color: var(--ink-muted);
   letter-spacing: 0.05em;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
 }
+
+.footer-press {
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  transition: color 0.2s;
+}
+
+.footer-press:hover { color: var(--ink); }
 
 /* ─── Fade-in animations ────────────────────────────────────────────────────── */
 .fade-in {

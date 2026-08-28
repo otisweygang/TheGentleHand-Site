@@ -22,6 +22,7 @@ const i18n = {
     credit_editor:      'Editor',
     credit_sound:       'Sound',
     footer:             '© 2026 The Gentle Hand of Atta. All rights reserved.',
+    footer_press:       'Press',
   },
   ar: {
     title:              'اليد الحنون لعطا',
@@ -45,6 +46,7 @@ const i18n = {
     credit_editor:      'مونتاج',
     credit_sound:       'صوت',
     footer:             '© 2026 اليد الحنون لعطا. جميع الحقوق محفوظة.',
+    footer_press:       'الصحافة',
   },
   fr: {
     title:              'La Main Douce d\'Atta',
@@ -68,6 +70,7 @@ const i18n = {
     credit_editor:      'Montage',
     credit_sound:       'Son',
     footer:             '© 2026 La Main Douce d\'Atta. Tous droits réservés.',
+    footer_press:       'Presse',
   },
   he: {
     title:              'היד הרכה של עטא',
@@ -91,6 +94,7 @@ const i18n = {
     credit_editor:      'עריכה',
     credit_sound:       'צליל',
     footer:             '© 2026 היד הרכה של עטא. כל הזכויות שמורות.',
+    footer_press:       'עיתונות',
   },
 };
 
