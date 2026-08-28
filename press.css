@@ -119,6 +119,46 @@
   padding: clamp(3rem, 9vw, 6rem) 0 clamp(2rem, 6vw, 3.5rem);
 }
 
+.kit-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: clamp(2rem, 6vw, 3.5rem);
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.kit-nav-back {
+  color: var(--ink-light);
+  border-bottom: 1px solid #e0deda;
+  padding-bottom: 1px;
+}
+
+.kit-nav-back:hover {
+  color: var(--ink);
+  border-bottom-color: var(--ink);
+}
+
+.kit-nav-download {
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  color: var(--white);
+  background: var(--olive);
+  border: none;
+  padding: 0.6rem 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.kit-nav-download:hover {
+  background: var(--olive-link);
+}
+
 .eyebrow {
   font-size: 0.66rem;
   letter-spacing: 0.32em;
@@ -334,24 +374,28 @@
   color: var(--ink);
 }
 
-.portraits {
+ul.portraits {
+  list-style: none;
+  margin: 2.5rem 0 0;
+  padding: 0;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  gap: clamp(1.5rem, 4vw, 3rem);
+  gap: clamp(1rem, 3vw, 2rem);
   align-items: flex-start;
-  margin-top: 2.5rem;
 }
 
-.portrait {
+li.portrait {
   margin: 0;
+  padding: 0;
   width: 120px;
-  flex-shrink: 0;
+  flex: 0 0 120px;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.4rem;
 }
 
-.portrait picture {
+li.portrait picture {
   display: block;
   width: 120px;
   height: 150px;
@@ -359,26 +403,22 @@
   background: var(--off-white);
 }
 
-.portrait img {
-  width: 100%;
-  height: 100%;
+li.portrait img {
+  display: block;
+  width: 120px;
+  height: 150px;
   object-fit: cover;
   object-position: center top;
   filter: grayscale(15%);
   transition: filter 0.4s;
 }
 
-.portrait:hover img {
+li.portrait:hover img {
   filter: grayscale(0%);
 }
 
-.portrait figcaption {
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
-}
-
 .p-role {
+  display: block;
   font-size: 0.6rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -386,6 +426,7 @@
 }
 
 .p-name {
+  display: block;
   font-size: 0.82rem;
   color: var(--ink);
 }
@@ -576,7 +617,8 @@
 /* ─── Print ─────────────────────────────────────────────────────────────────── */
 @media print {
   .gate,
-  .lightbox {
+  .lightbox,
+  .kit-nav {
     display: none !important;
   }
 
